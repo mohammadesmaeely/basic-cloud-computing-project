@@ -22,3 +22,42 @@ msgstr "کاربران"
 
 msgid "username"
 msgstr "نام کاربری"
+
+msgid "name"
+msgstr "نام"
+
+msgid "state"
+msgstr "استان"
+
+msgid "states"
+msgstr "اتسان ها"
+
+msgid "city"
+msgstr "شهر"
+
+msgid "cities"
+msgstr "شهرها"
+
+msgid "university"
+msgstr "دانشگاه"
+
+msgid "universities"
+msgstr "دانشگاه ها"
+
+msgid "lecture"
+msgstr "درس"
+
+msgid "lectures"
+msgstr "درس ها"
+
+msgid "teacher"
+msgstr "استاد"
+
+msgid "teachers"
+msgstr "اساتید"
+
+msgid "presenting lesson"
+msgstr "ارائه درس"
+
+msgid "lesson presentations"
+msgstr "ارائه دروس"
