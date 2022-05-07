@@ -1,7 +1,4 @@
 from rest_framework import serializers
-from rest_framework.validators import UniqueValidator
-from django.utils.translation import ugettext_lazy as _
-from rest_framework.validators import UniqueTogetherValidator
 
 from presents.models import Present, University, Teacher, Lecture
 
