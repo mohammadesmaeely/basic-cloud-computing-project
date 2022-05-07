@@ -77,3 +77,11 @@ msgstr "ارزیابی"
 msgid "assessments"
 msgstr "ارزیابی ها"
 
+msgid "word"
+msgstr "کلمه"
+
+msgid "bad word"
+msgstr "کلمه ی ممنوعه"
+
+msgid "bad words"
+msgstr "کلمات ممنوعه"
