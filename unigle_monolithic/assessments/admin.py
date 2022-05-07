@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from assessments.models import Assessment
+
+
+@admin.register(Assessment)
+class AssessmentAdmin(admin.ModelAdmin):
+    model = Assessment
+    list_display = ['id', 'registrar', 'present']

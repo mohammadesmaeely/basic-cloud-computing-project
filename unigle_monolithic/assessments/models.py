@@ -7,7 +7,7 @@ from presents.models import Present
 
 
 class Assessment(models.Model):
-    registrant = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("registrant"))
+    registrar = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("registrant"))
     present = models.ForeignKey(Present, on_delete=models.CASCADE, verbose_name=_("presenting lesson"))
     rate = models.IntegerField(
         validators=[
@@ -24,4 +24,3 @@ class Assessment(models.Model):
 
     def __str__(self):
         return f'{self.present} - {self.comment}'
-
