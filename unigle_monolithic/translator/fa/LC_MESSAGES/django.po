@@ -85,3 +85,6 @@ msgstr "کلمه ی ممنوعه"
 
 msgid "bad words"
 msgstr "کلمات ممنوعه"
+
+msgid "please be polite"
+msgstr "لطفا باادب باشید."
