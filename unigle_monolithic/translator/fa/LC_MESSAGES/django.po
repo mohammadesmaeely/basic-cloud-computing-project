@@ -61,3 +61,19 @@ msgstr "ارائه درس"
 
 msgid "lesson presentations"
 msgstr "ارائه دروس"
+
+msgid "registrant"
+msgstr "ثبت کننده"
+
+msgid "rate"
+msgstr "امتیاز"
+
+msgid "comment"
+msgstr "نظر"
+
+msgid "assessment"
+msgstr "ارزیابی"
+
+msgid "assessments"
+msgstr "ارزیابی ها"
+
