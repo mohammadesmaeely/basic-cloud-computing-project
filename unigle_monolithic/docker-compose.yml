@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    restart: always
+    build: ./
+    ports:
+      - "8000:8000"
+    volumes:
+      - web-django:/usr/src/app
+      - web-static:/usr/src/app/static
+    command: python manage.py runserver 0.0.0.0:8000
+    
+
+  nginx:
+    restart: always
+    build: ./nginx/
+    ports:
+      - "8080:8000"
+    volumes:
+      - web-static:/www/static
+    links:
+      - web:web
+
+
+volumes:
+  web-django:
+  web-static:
