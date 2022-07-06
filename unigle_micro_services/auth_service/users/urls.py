@@ -3,7 +3,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework.routers import DefaultRouter
 
 from users.views import profile_views
-from users.views.token import GetUserIdView
+from users.views.micro_auth import GetUserIdView
 
 router = DefaultRouter()
 
