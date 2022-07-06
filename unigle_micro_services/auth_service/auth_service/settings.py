@@ -59,7 +59,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-ROOT_URLCONF = 'unigle_monolithic.urls'
+ROOT_URLCONF = 'auth_service.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'unigle_monolithic.wsgi.application'
+WSGI_APPLICATION = 'auth_service.wsgi.application'
 
 
 # Database

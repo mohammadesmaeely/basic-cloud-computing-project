@@ -3,6 +3,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework.routers import DefaultRouter
 
 from users.views import profile_views
+from users.views.token import GetUserIdView
 
 router = DefaultRouter()
 
@@ -11,4 +12,5 @@ router.register('admin/users', profile_views.AdminUserViewSet, basename='admin_u
 urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('get_user_id/', GetUserIdView.as_view())
 ] + router.urls

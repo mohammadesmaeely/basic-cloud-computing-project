@@ -2,13 +2,10 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from users.models import User
-from presents.models import Present
-
 
 class Assessment(models.Model):
-    registrar = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("registrant"))
-    present = models.ForeignKey(Present, on_delete=models.CASCADE, verbose_name=_("presenting lesson"))
+    registrar = models.CharField(max_length=200, verbose_name=_("registrant"))
+    present = models.CharField(max_length=200, verbose_name=_("presenting lesson"))
     rate = models.IntegerField(
         validators=[
             MinValueValidator(0),

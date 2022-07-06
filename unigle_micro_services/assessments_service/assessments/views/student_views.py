@@ -1,6 +1,8 @@
-from rest_framework.permissions import SAFE_METHODS, IsAuthenticated
+from rest_framework.permissions import SAFE_METHODS
 from rest_framework.viewsets import ModelViewSet
 
+
+from assessments_service.auth_utils import IsAuthenticated
 from assessments.filters import AssessmentPublicFilters
 from assessments.models import Assessment
 from assessments.serialziers import AssessmentPublicSerializer

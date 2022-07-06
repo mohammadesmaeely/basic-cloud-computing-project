@@ -57,9 +57,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'presents_service.auth_utils.CustomAuthMiddleware'
 ]
 
-ROOT_URLCONF = 'unigle_monolithic.urls'
+ROOT_URLCONF = 'presents_service.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'unigle_monolithic.wsgi.application'
+WSGI_APPLICATION = 'presents_service.wsgi.application'
 
 
 # Database
@@ -142,9 +143,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ##################
 # custom setting #
 ##################
-
-# auth model
-AUTH_USER_MODEL = 'users.User'
 
 # drf setting
 REST_FRAMEWORK = {

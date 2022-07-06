@@ -1,6 +1,7 @@
-from rest_framework.permissions import SAFE_METHODS, IsAuthenticated, IsAdminUser
+from rest_framework.permissions import SAFE_METHODS
 from rest_framework.viewsets import ModelViewSet
 
+from presents_service.auth_utils import IsAuthenticated, IsAdminUser
 from presents.models import University
 from presents.serializers import UniversitySerializer
 
